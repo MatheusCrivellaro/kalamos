@@ -1,6 +1,6 @@
 // Kálamos — service worker: funciona offline depois que os dados foram abertos ou baixados.
 // Os caminhos são relativos ao escopo, então funciona na raiz ou numa subpasta (GitHub Pages).
-const VERSION = "kalamos-v2"; // v2: descarta caches antigos (a NVI agora só circula criptografada)
+const VERSION = "kalamos-v3"; // v3: ícone novo (alfa); v2 descartou caches com a NVI aberta
 const BASE = new URL(self.registration.scope).pathname; // ex.: "/" ou "/kalamos/"
 const SHELL = ["", "index.html", "manifest.webmanifest", "kalamos.svg", "icons/icon-192.png"].map((p) => BASE + p);
 
